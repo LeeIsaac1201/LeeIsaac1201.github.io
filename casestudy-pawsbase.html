@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PawsBase — Case Study — Isaac</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="logo">isaac<span>.</span>ux</a>
+    <ul>
+      <li><a class="nav-link" href="index.html#projects">Projects</a></li>
+      <li><a class="nav-link" href="index.html#skills">Skills</a></li>
+      <li><a class="nav-link" href="index.html#challenges">Challenges</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="wrap">
+    <a href="index.html#projects" class="cs-back">← back to projects</a>
+    <span class="eyebrow">// case study</span>
+    <h1>PawsBase</h1>
+    <p class="lede" style="margin-top:0.8rem;">
+      A solo UX redesign of the health log timeline and entry flow in PawsBase,
+      a Flutter pet health &amp; training app I develop on as part of a group project.
+      Within that project, I was also credited with designing the Add New Pet
+      page; the health log redesign below is a separate exploration I took on
+      myself, distinct from my assigned role.
+    </p>
+    <div class="cs-meta">
+      <span class="tag">role: developer on team</span>
+      <span class="tag">credited design: Add New Pet page</span>
+      <span class="tag tag--status">self-directed: health log redesign</span>
+      <span class="tag">tools: Figma, Flutter</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">// 01 — overview</span>
+      <h2>Project overview</h2>
+    </div>
+    <div class="two-col">
+      <div>
+        <h3>Goals</h3>
+        <p>Improve the health log timeline and entry flow, the part of
+           PawsBase where a pet owner reviews their pet's history and logs
+           new records (vaccinations, checkups, medication). The app works;
+           the goal here is to make this specific flow clearer and faster
+           to use, based on real observation rather than assumption.</p>
+      </div>
+      <div>
+        <h3>Target audience &amp; context</h3>
+        <p>Pet owners tracking ongoing health and training records for
+           their pets. I'm a developer on the PawsBase team (I built the
+           original version of these two screens), and this case study is
+           my own solo redesign exploration, separate from what the team
+           has shipped, applying a proper UX process to a flow I already
+           know well from the inside.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">// 02 — process</span>
+      <h2>Design process</h2>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step">
+        <span class="step-num">01</span>
+        <h4>Research</h4>
+        <p>Interviewed 3 pet owners, anchored around friction points found in
+        the current code (one form for all entry types, no weight history,
+        tight modal). Found a clear split: two wanted structured,
+        type-specific detail and weight trends over time; one wanted a single
+        quick note and nothing more. All three valued vaccination reminders;
+        medication/checkup reminders were more polarizing.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">02</span>
+        <h4>Ideation</h4>
+        <p>The clearest signal was a tension between minimal and thorough
+        users, resolved almost exactly as one participant suggested it
+        themselves: a quick-capture default for fast logging, with an
+        optional expand into type-specific fields (vaccine name/next due,
+        dosage/frequency, vet notes) plus a weight entry for trend tracking.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">03</span>
+        <h4>Wireframing</h4>
+        <p>No separate wireframing stage. Without edit access to the
+        team's Figma file, I went directly from the research finding to
+        building the real screen in Flutter, using the progressive
+        disclosure decision as the direct blueprint rather than sketching
+        it first.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">04</span>
+        <h4>Prototyping</h4>
+        <p>Built as a real, working Flutter screen using the app's actual
+        design tokens and data structure, rather than a Figma
+        click-through. Testing a working screen meant people's reactions
+        were to a real interaction, not a simulation of one.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">05</span>
+        <h4>Testing</h4>
+        <p>Tested the working prototype with 3 people. One filled in only
+        the visible fields and saved without noticing "Add more detail"
+        existed at all. One paused, explored, and found it naturally when
+        asked to add a next-due date. One deliberately ignored it and, when
+        shown the expanded state, said it looked "busy" even while
+        understanding it was optional. Progressive disclosure worked for
+        two of three, but missed a real discoverability gap for someone who
+        doesn't proactively explore the screen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">// 03 — artefacts</span>
+      <h2>Design artefacts</h2>
+    </div>
+    <div class="artefact-gallery cols-3">
+      <figure>
+        <img src="media/Screenshot 2026-07-23 113731.png" alt="Health log screen showing an empty state with an Add Entry button">
+        <figcaption>Health log, empty state. The redesigned "+ Add Entry" entry point.</figcaption>
+      </figure>
+      <figure>
+        <img src="media/Screenshot 2026-07-23 113743.png" alt="Quick-capture add health record sheet with type selector, note, date, and an Add more detail toggle">
+        <figcaption>Quick capture (default). Type, note, and date, with "Add more detail" available but not required.</figcaption>
+      </figure>
+      <figure>
+        <img src="media/Screenshot 2026-07-23 113854.png" alt="Expanded add health record sheet showing vaccine name, next due date, and optional weight fields">
+        <figcaption>Expanded state. Vaccine-specific fields plus an optional weight entry, revealed only when requested.</figcaption>
+      </figure>
+    </div>
+
+    <h3 style="margin-top:2rem;">Credited design work on the team</h3>
+    <p style="max-width:60ch;">Separate from the health log redesign above,
+       I was the credited designer for the Add New Pet and Edit Pet pages
+       within the live PawsBase app. This is shipped, team-approved work,
+       not part of the self-directed exploration.</p>
+    <figure style="max-width:420px; border:1px solid #DCDAD0; border-radius:6px; overflow:hidden; background:#fff; margin:0;">
+      <div style="display:flex; gap:2px;">
+        <img src="media/Screenshot 2026-07-23 104108.png" alt="Add New Pet page, top half, showing photo, name, species, and gender fields" style="width:50%; display:block;">
+        <img src="media/Screenshot 2026-07-23 105815.png" alt="Add New Pet page, scrolled down, showing breed, weight, date of birth, vaccinated, and neutered fields" style="width:50%; display:block;">
+      </div>
+      <figcaption style="padding:0.7rem 0.9rem; font-size:0.85rem; color:var(--slate-mute); border-top:1px solid #DCDAD0;">Add New Pet page (shipped), top and scrolled. Fields I added: Date of Birth, Vaccinated?, Neutered? Field I removed: Adoption Date.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">// 04 — decisions</span>
+      <h2>Key design decision &amp; trade-off</h2>
+    </div>
+    <blockquote class="quote-block">
+      "A quick pop-up for fast notes, but with the option to expand into a
+      full screen if I want to add more detail." One participant's own
+      suggestion, and the decision that shaped the redesign.
+    </blockquote>
+    <p>The current form treats every entry type identically: same three
+       fields, same modal, regardless of whether you're logging a five-minute
+       checkup note or a full vaccination record. Interviews showed this
+       one-size-fits-all approach doesn't actually fit anyone well. It's too
+       sparse for owners who want vaccine names, dosages, and weight trends,
+       and still too much friction for owners who just want to jot something
+       down fast.
+       <br><br>
+       Rather than pick a side, the redesign follows progressive disclosure:
+       a quick-capture default (type, one-line note, date) stays the fast
+       path for anyone who wants it, with an "add more detail" expansion that
+       reveals type-specific fields (vaccine name and next-due date,
+       dosage and frequency, or vet notes) plus an optional weight entry.
+       This was a genuine trade-off to accept. It's more implementation
+       complexity than a single fixed form, and the interface has to clearly
+       signal that more detail is optional, not required, or it risks feeling
+       cluttered for the minimalist users it's also meant to serve.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">// 05 — challenges &amp; results</span>
+      <h2>Challenges and outcomes</h2>
+    </div>
+    <div class="two-col">
+      <div>
+        <h3>Challenges</h3>
+        <p>Flutter and Dart were new to me going into this project, so on
+           top of the design work, I was learning the language itself
+           while trying to implement something reasonably polished. That
+           made building a real Flutter screen instead of a Figma
+           click-through slower than it should have been (wiring the
+           type-specific fields, the expand/collapse state, and a
+           standalone test harness so I could try it without touching the
+           team's shipped app took longer while I was still learning the
+           basics). It also meant testing gave more honest
+           feedback than a prototype might have, since people were
+           interacting with a real, working interface.</p>
+      </div>
+      <div>
+        <h3>Results</h3>
+        <p>The redesign resolved the core tension for most users. Someone
+           who wanted to explore found "Add more detail" naturally, and
+           someone who wanted a fast path could ignore it entirely. But
+           testing surfaced a real gap: one participant missed it
+           completely, which means the toggle isn't discoverable enough on
+           its own. With more time, the next iteration would make "Add
+           more detail" a more visually distinct affordance (a filled
+           button rather than a plain text link, for instance) rather than
+           relying on people to notice it unprompted.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Isaac</span>
+    <a href="index.html">← back to home</a>
+  </div>
+</footer>
+
+</body>
+</html>

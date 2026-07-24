@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HomeHero — Case Study — Isaac</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="logo">isaac<span>.</span>ux</a>
+    <ul>
+      <li><a class="nav-link" href="index.html#projects">Projects</a></li>
+      <li><a class="nav-link" href="index.html#skills">Skills</a></li>
+      <li><a class="nav-link" href="index.html#challenges">Challenges</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="wrap">
+    <a href="index.html#projects" class="cs-back">← back to projects</a>
+    <span class="eyebrow">// case study</span>
+    <h1>HomeHero</h1>
+    <p class="lede" style="margin-top:0.8rem;">
+      A service marketplace platform connecting homeowners with local, vetted
+      service providers, built for CP2 Capstone Project.
+    </p>
+    <div class="cs-meta">
+      <span class="tag">role: solo UI/UX design</span>
+      <span class="tag">context: capstone (supervised)</span>
+      <span class="tag">tools: HTML/CSS, PHP/MySQL</span>
+      <span class="tag tag--status">status: alpha prototype</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">// 01 — overview</span>
+      <h2>Project overview</h2>
+    </div>
+    <div class="two-col">
+      <div>
+        <h3>Goals</h3>
+        <p>HomeHero acts as an intermediary connecting homeowners who need
+           home services with local service providers. It's a two-sided
+           marketplace, so finding a trustworthy provider (or picking up a
+           side income opportunity) doesn't have to rely on word-of-mouth
+           or informal channels.</p>
+      </div>
+      <div>
+        <h3>Target audience &amp; context</h3>
+        <p>Two user groups: homeowners searching for and booking service
+           providers, and providers looking for a side or primary income
+           stream. It's currently an alpha prototype scoped to Malaysia,
+           a deliberate constraint given this was built within a single
+           capstone semester, not intended as a production-ready launch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">// 02 — process</span>
+      <h2>Design process</h2>
+      <p>Reconstructed from the decisions made throughout the build, since
+         this project was developed iteratively alongside the code rather
+         than fully designed upfront.</p>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step">
+        <span class="step-num">01</span>
+        <h4>Research</h4>
+        <p>Competitor analysis of existing home-service platforms, focused
+        on identifying friction points homeowners and providers face with
+        informal, fragmented booking processes.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">02</span>
+        <h4>Ideation</h4>
+        <p>Used AI tools to help explore an initial feature set, reflecting
+        my interest in AI-assisted workflows, then narrowed it down to
+        what was realistic for a single-semester scope.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">03</span>
+        <h4>Wireframing</h4>
+        <p>No separate wireframing stage. I designed directly in HTML/CSS,
+        using the browser itself as the wireframing surface rather than
+        working through Figma first.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">04</span>
+        <h4>Prototyping</h4>
+        <p>The build functions as both prototype and foundation: as an
+        alpha version, it validates the core flows now while laying the
+        groundwork for a future production version.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">05</span>
+        <h4>Testing</h4>
+        <p>Had friends use the live application and gave informal feedback,
+        which surfaced issues to address before treating it as stable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">// 03 — artefacts</span>
+      <h2>Design artefacts</h2>
+    </div>
+    <div class="artefact-gallery">
+      <figure>
+        <img src="media/Screenshot 2026-07-23 092709.png" alt="HomeHero service search page with filters and a provider card">
+        <figcaption>Service search. Homeowners filter by distance, rating, and budget to find a provider.</figcaption>
+      </figure>
+      <figure>
+        <img src="media/Screenshot 2026-07-23 092851.png" alt="Booking detail page from the homeowner's view, showing a pending electrical job">
+        <figcaption>Booking detail, homeowner view. Job details, problem photos, and the two parties involved.</figcaption>
+      </figure>
+      <figure>
+        <img src="media/Screenshot 2026-07-23 093635.png" alt="Booking detail page from the provider's view, showing a completed job with invoice">
+        <figcaption>Booking detail, provider view. The same booking after completion, with invoice and evidence photos.</figcaption>
+      </figure>
+      <figure>
+        <img src="media/Screenshot 2026-07-23 093657.png" alt="Provider dashboard showing jobs completed, earnings, rating, and pending requests">
+        <figcaption>Provider dashboard. The other side of the marketplace: earnings, ratings, and incoming requests.</figcaption>
+      </figure>
+      <figure class="full-width">
+        <img src="media/Screenshot 2026-07-23 094142.png" alt="phpMyAdmin interface showing the bookings table in the HomeHero database">
+        <figcaption>Direct database access via phpMyAdmin, the stand-in for the admin dashboard discussed in the Key Decision section below.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">// 04 — decisions</span>
+      <h2>Key design decision &amp; trade-off</h2>
+    </div>
+    <blockquote class="quote-block">
+      I originally planned a full admin role, a dashboard for moderating
+      listings and approving providers, but scrapped it under time
+      constraints.
+    </blockquote>
+    <p>Instead of building a dedicated admin interface, I made peace with
+       handling admin-level changes directly through phpMyAdmin for now.
+       It's not a decision I'd defend for a production platform. There's
+       no audit trail, no safeguards against a bad edit, and it doesn't
+       scale past one person managing the system. But for an alpha
+       prototype with a single-semester deadline, it let me protect the
+       features homeowners and providers actually touch, rather than
+       spending scarce time on tooling only I would use. It's an explicit
+       item for future work rather than something I consider solved.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">// 05 — challenges &amp; results</span>
+      <h2>Challenges and outcomes</h2>
+    </div>
+    <div class="two-col">
+      <div>
+        <h3>Challenges</h3>
+        <p>The main challenge was making sure everything worked as intended
+           within a limited timeframe. Balancing feature scope against a
+           single-semester deadline meant constant prioritization, and
+           accepting that some features (like the admin role above) had to
+           be cut rather than compromised on.</p>
+      </div>
+      <div>
+        <h3>Results</h3>
+        <p>No formal grade or supervisor feedback yet. The next thing I'd
+           build is a proper admin role: a dashboard for approving new
+           service provider registrations, moderating listings and reviews,
+           and resolving disputes between homeowners and providers, instead
+           of relying on direct database access as a stand-in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Isaac</span>
+    <a href="index.html">← back to home</a>
+  </div>
+</footer>
+
+</body>
+</html>

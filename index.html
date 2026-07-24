@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isaac — UX Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="logo">isaac<span>.</span>ux</a>
+    <ul>
+      <li><a class="nav-link" href="#intro">Intro</a></li>
+      <li><a class="nav-link" href="#projects">Projects</a></li>
+      <li><a class="nav-link" href="#skills">Skills</a></li>
+      <li><a class="nav-link" href="#challenges">Challenges</a></li>
+      <li><a class="nav-link" href="#video">Walkthrough</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ HERO / INTRO ============ -->
+<header class="hero" id="intro">
+  <div class="wrap">
+    <span class="eyebrow">// portfolio — UI/UX design &amp; development</span>
+    <h1>Isaac<br>Designer who ships.</h1>
+    <p class="lede">
+      I'm an aspiring software engineer with a growing interest in fintech —
+      the kind of products that have to earn trust while handling dense,
+      high-stakes information. That curiosity, plus a habit of picking up new
+      languages and tools, shapes how I approach design: less about visual
+      flourish, more about whether an interface holds up under real complexity.
+      HomeHero and PawsBase below are both attempts at that same question, in
+      different domains.
+    </p>
+    <div class="tags-row">
+      <span class="tag">role: designer + developer</span>
+      <span class="tag">based: Malaysia</span>
+      <span class="tag tag--status">status: open to work</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">// selected work</span>
+      <h2>Projects</h2>
+      <p>Two projects, two different starting points — one built and refined over
+         a full capstone cycle, one designed from a blank page to test my process end-to-end.</p>
+    </div>
+
+    <div class="project-grid">
+
+      <a href="casestudy-homehero.html" class="project-card">
+        <div class="thumb"><img class="fit-cover" src="media/Screenshot 2026-07-22 175753.png" alt="HomeHero landing page — book trusted handyman services near you"></div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag">web platform</span>
+            <span class="tag tag--status">capstone</span>
+          </div>
+          <h3>HomeHero</h3>
+          <p>A service marketplace platform connecting homeowners with local service
+             providers. Solo UI/UX ownership within a supervised capstone project.</p>
+        </div>
+      </a>
+
+      <a href="casestudy-pawsbase.html" class="project-card">
+        <div class="thumb"><img src="media/Screenshot 2026-07-22 185034.png" alt="PawsBase home screen showing pet dashboard and navigation"></div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag">mobile app (Flutter)</span>
+            <span class="tag tag--status">solo redesign</span>
+          </div>
+          <h3>PawsBase</h3>
+          <p>A solo UX redesign of the health log timeline and entry flow in
+             a pet health &amp; training app I develop on with a team —
+             full research-to-prototype cycle, tested with real users.</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="on-ink" id="skills">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">// toolkit</span>
+      <h2>Skills &amp; tools</h2>
+    </div>
+    <!-- inline icon defs, referenced via <use> below -->
+    <svg style="display:none" aria-hidden="true">
+      <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="i-sitemap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="6" rx="1"/><rect x="3" y="15" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M12 9v3M6 15v-2a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2"/></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+      <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
+      <symbol id="i-handoff" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></symbol>
+    </svg>
+
+    <div class="skills-icon-groups">
+      <div class="skill-icon-group">
+        <h4>design</h4>
+        <div class="skill-icon-row">
+          <div class="skill-icon-item"><i class="devicon-figma-plain"></i><span>Figma</span></div>
+          <div class="skill-icon-item"><svg class="skill-svg"><use href="#i-search"/></svg><span>User research</span></div>
+          <div class="skill-icon-item"><svg class="skill-svg"><use href="#i-users"/></svg><span>Usability testing</span></div>
+          <div class="skill-icon-item"><svg class="skill-svg"><use href="#i-sitemap"/></svg><span>Info architecture</span></div>
+        </div>
+      </div>
+      <div class="skill-icon-group">
+        <h4>development</h4>
+        <div class="skill-icon-row">
+          <div class="skill-icon-item"><i class="devicon-flutter-plain"></i><span>Flutter</span></div>
+          <div class="skill-icon-item"><i class="devicon-dart-plain"></i><span>Dart</span></div>
+          <div class="skill-icon-item"><i class="devicon-php-plain"></i><span>PHP</span></div>
+          <div class="skill-icon-item"><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
+          <div class="skill-icon-item"><i class="devicon-java-plain"></i><span>Java</span></div>
+          <div class="skill-icon-item"><i class="devicon-csharp-plain"></i><span>C#</span></div>
+          <div class="skill-icon-item"><i class="devicon-scala-plain"></i><span>Scala</span></div>
+          <div class="skill-icon-item"><i class="devicon-git-plain"></i><span>Git</span></div>
+        </div>
+      </div>
+      <div class="skill-icon-group">
+        <h4>process</h4>
+        <div class="skill-icon-row">
+          <div class="skill-icon-item"><svg class="skill-svg"><use href="#i-target"/></svg><span>User-centred design</span></div>
+          <div class="skill-icon-item"><svg class="skill-svg"><use href="#i-refresh"/></svg><span>Agile delivery</span></div>
+          <div class="skill-icon-item"><svg class="skill-svg"><use href="#i-check"/></svg><span>Manual QA</span></div>
+          <div class="skill-icon-item"><svg class="skill-svg"><use href="#i-handoff"/></svg><span>Design-to-dev handoff</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHALLENGES ============ -->
+<section id="challenges">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">// semester log</span>
+      <h2>Challenges</h2>
+      <p>Smaller problems solved along the way — the friction that doesn't make it
+         into a full case study but still shaped how I think.</p>
+    </div>
+
+    <div class="challenge-list">
+      <div class="challenge-item">
+        <span class="num">01</span>
+        <div>
+          <h4>Scoping under real constraints</h4>
+          <p><!-- verify/personalize --> Reducing HomeHero's feature set to fit
+          capstone deadlines meant deciding what to cut without losing the core
+          user value — a trade-off I had to justify, not just make.</p>
+        </div>
+      </div>
+      <div class="challenge-item">
+        <span class="num">02</span>
+        <div>
+          <h4>Reconstructing decisions after the fact</h4>
+          <p><!-- verify/personalize --> HomeHero was built iteratively without
+          a formal design log, so writing it up for this portfolio meant
+          piecing together why each decision was made, after the fact.</p>
+        </div>
+      </div>
+      <div class="challenge-item">
+        <span class="num">03</span>
+        <div>
+          <h4>Designing for a domain I'm still learning</h4>
+          <p><!-- verify/personalize --> Approaching a UX redesign for
+          PawsBase meant researching how pet owners actually track health
+          records before assuming what "better" looked like.</p>
+        </div>
+      </div>
+      <div class="challenge-item">
+        <span class="num">04</span>
+        <div>
+          <h4>Redesigning something I already built</h4>
+          <p><!-- verify/personalize --> Since I developed the original
+          PawsBase screens, separating "how I built it" from "how I'd
+          design it properly" took a conscious step back before I could
+          see it with fresh eyes.</p>
+        </div>
+      </div>
+      <div class="challenge-item">
+        <span class="num">05</span>
+        <div>
+          <h4>Privacy as a first-class concern, not an afterthought</h4>
+          <p><!-- verify/personalize --> Partway through HomeHero I realized
+          data privacy needed real design attention — not a mention in the
+          docs — and had to work out how to fold that in without a full redesign.</p>
+        </div>
+      </div>
+      <div class="challenge-item">
+        <span class="num">06</span>
+        <div>
+          <h4>Running a full design process on evenings only</h4>
+          <p><!-- verify/personalize --> Compressing research, wireframing,
+          and testing for PawsBase into a few evening hours a week meant being
+          disciplined about scope — without cutting the process short.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO / CTA ============ -->
+<section class="on-ink" id="video">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">// walkthrough</span>
+      <h2>3-minute video</h2>
+    </div>
+    <div class="video-block">
+      <p style="max-width:50ch;">A short walkthrough of my background, design process,
+         and the thinking behind the two projects above.</p>
+      <!-- TODO: replace # with your unlisted YouTube or Drive link -->
+      <a href="#" class="btn">▸ watch the walkthrough</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Isaac — built with Figma, code, and a lot of evenings.</span>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/leeminghuiisaac/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg class="skill-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+      </a>
+      <a href="https://github.com/LeeIsaac1201" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg class="skill-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .3.21.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+      </a>
+      <a href="mailto:leeminghuiisaac@outlook.com" aria-label="Email">
+        <svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
